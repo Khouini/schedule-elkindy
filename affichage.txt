@@ -1,0 +1,77 @@
+To display schedule data in React with good design, you can use various UI libraries such as Material-UI, Ant Design, or you can create your own custom components. Here's an example of how you can display your schedule data using Material-UI components:
+
+First, you'll need to install Material-UI:
+
+```bash
+npm install @mui/material @emotion/react @emotion/styled
+```
+
+Then, you can create a React component to render the schedule data:
+
+```jsx
+import React from 'react';
+import { Typography, Paper, Grid } from '@mui/material';
+
+const Schedule = ({ scheduleData }) => {
+  return (
+    <Grid container spacing={2}>
+      {scheduleData.map((slot, index) => (
+        <Grid item xs={12} key={index}>
+          <Paper elevation={3} style={{ padding: '10px' }}>
+            <Typography variant="h6">{slot.day}</Typography>
+            <Typography variant="body1">Time: {slot.startTime} - {slot.endTime}</Typography>
+            <Typography variant="body1">Teacher: {slot.teacher}</Typography>
+            <Typography variant="body1">Students: {slot.students.join(', ')}</Typography>
+            <Typography variant="body1">Classroom: {slot.classroom}</Typography>
+            <Typography variant="body1">Class: {slot.class}</Typography>
+          </Paper>
+        </Grid>
+      ))}
+    </Grid>
+  );
+};
+
+export default Schedule;
+```
+
+Then, you can use this `Schedule` component in your main application component like this:
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Schedule from './Schedule';
+
+const scheduleData = [
+  {
+    startTime: '15:00',
+    endTime: '15:30',
+    day: 'vendredi',
+    teacher: 'teacher1',
+    students: ['student1'],
+    classroom: 'classroom1',
+    class: 'class1',
+  },
+  {
+    startTime: '15:00',
+    endTime: '15:30',
+    day: 'lundi',
+    teacher: 'teacher1',
+    students: ['student1'],
+    classroom: 'classroom1',
+    class: 'class1',
+  },
+];
+
+const App = () => {
+  return (
+    <div style={{ padding: '20px' }}>
+      <h1>Schedule</h1>
+      <Schedule scheduleData={scheduleData} />
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+This will render your schedule data with a clean Material-UI design in your React application. You can further customize the styling and layout according to your requirements.

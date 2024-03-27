@@ -1,0 +1,21 @@
+i want npm module to display this data [
+  ScheduleSlot {
+    startTime: '15:00',
+    endTime: '15:30',
+    day: 'vendredi',
+    teacher: 'teacher1',
+    students: [ 'student1' ],
+    classroom: 'classroom1',
+    class: 'class1'
+  },
+  ScheduleSlot {
+    startTime: '15:00',
+    endTime: '15:30',
+    day: 'lundi',
+    teacher: 'teacher1',
+    students: [ 'student1' ],
+    classroom: 'classroom1',
+    class: 'class1'
+  }
+]
+with react as good design schedule

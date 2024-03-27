@@ -1,0 +1,18 @@
+Des emplois du temps (par classe)
+
+Dans l'inreface gestion Schedule 
+
+Ajouter Schedule Slot (séance)
+
+heure debut
+heure fin
+day
+classe (RTWIN3, 4DS4)
+classroom (412, 310)
+teacher
+students
+code: schdule.save()
+
+Afficahge de l'emplois du temps de classe 4TWIN3
+Schedule.find({class: "4TWIN3"})
+=> bech yjiblek les séances mtaa el 4TWIN3 lkol

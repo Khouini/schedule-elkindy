@@ -1,0 +1,32 @@
+[
+  {
+    "jour": "vendredi",
+    "heureDebut": "15:00",
+    "heureFin": "15:30",
+    "utilisateur": "teacher1",
+    "__v": 0
+  },
+
+  {
+    "jour": "vendredi",
+    "heureDebut": "15:00",
+    "heureFin": "15:30",
+    "utilisateur": "student1",
+    "__v": 0
+  },
+  {
+    "jour": "lundi",
+    "heureDebut": "15:00",
+    "heureFin": "15:30",
+    "utilisateur": "teacher1",
+    "__v": 0
+  },
+
+  {
+    "jour": "lundi",
+    "heureDebut": "15:00",
+    "heureFin": "15:30",
+    "utilisateur": "student1",
+    "__v": 0
+  }
+]
